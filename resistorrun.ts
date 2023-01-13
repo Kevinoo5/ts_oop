@@ -10,7 +10,10 @@ class Resistor {
     getPower(u: number): number {
         return u * this.r;
     }
+    getResistance(): number {
+        return this.r
+    }
 }
 
 let r1: Resistor = new Resistor(220)
-console.log(r1.getCurrent(1000))
+console.log(r1.getResistance())
